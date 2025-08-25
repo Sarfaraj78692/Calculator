@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Calculator — HTML • CSS • JavaScript</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="calc" role="application" aria-label="Calculator">
+<div class="header">
+<div class="brand">CALCULATOR</div>
+<div aria-hidden="true">🧮</div>
+</div>
+
+
+<section class="display" aria-live="polite" aria-atomic="true">
+<div class="history" id="history"></div>
+<div class="current" id="current">0</div>
+</section>
+
+
+<section class="grid" aria-label="Calculator keypad">
+<button class="util danger" data-action="clear" title="Clear (Esc)">AC</button>
+<button class="util" data-action="del" title="Delete (Backspace)">DEL</button>
+<button class="util" data-action="percent" title="Percent (%)">%</button>
+<button class="op" data-op="/" title="Divide (/)">÷</button>
+
+
+<button data-num>7</button>
+<button data-num>8</button>
+<button data-num>9</button>
+<button class="op" data-op="*" title="Multiply (*)">×</button>
+
+
+<button data-num>4</button>
+<button data-num>5</button>
+<button data-num>6</button>
+<button class="op" data-op="-" title="Subtract (-)">−</button>
+
+
+<button data-num>1</button>
+<button data-num>2</button>
+<button data-num>3</button>
+<button class="op" data-op="+" title="Add (+)">+</button>
+
+
+<button data-action="sign" title="Toggle sign (±)">±</button>
+<button data-num>0</button>
+<button data-action="dot" title="Decimal (.)">.</button>
+<button class="eq" data-action="equals" title="Equals (= or Enter)">=</button>
+</section>
+</main>
+
+
+<footer>
+Keyboard: 0–9 • + − × ÷ • . • Enter/= equals • Backspace delete • Esc clear • % percent • ± toggle sign
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
